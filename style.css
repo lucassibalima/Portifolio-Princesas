@@ -38,7 +38,7 @@ nav a:hover{
 }
 
 header{
-    min-height:100vh;
+    min-height:70vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -62,9 +62,8 @@ header h1{
 }
 
 .frase{
-    margin-top:10px;
-    font-size:1.1rem;
-    color:#cbd5e1;
+    color:#5b21b6;
+    font-weight:600;
 }
 
 section{
@@ -99,7 +98,7 @@ ul li{
 }
 
 .card{
-    background:rgba(255,255,255,0.05);
+    background:rgba(255,255,255,0.25);
     border:1px solid rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
 
@@ -141,6 +140,8 @@ ul li{
 table{
     width:100%;
     border-collapse:collapse;
+    border-radius:15px;
+overflow:hidden;
 }
 
 th,td{
@@ -252,4 +253,38 @@ footer{
 
 #topBtn:hover{
     transform:scale(1.1);
+}
+
+.card{
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.card a{
+    margin-top:auto;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(219,39,119,0.35);
+}
+
+.card{
+    transition:0.4s;
+}
+
+section{
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
